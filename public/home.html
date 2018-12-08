@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Meme Me: For all YOUR Meme's</title>
+  <meta name="author" content="Byron Inocencio">
+
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+   <nav id="menu" class="main-nav" role="navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a id="logout_button" href="#">Logout</a></li>
+      </ul>
+    </nav>
+  <div class="main-div">
+  	<h1>Meme Me </h1>
+    <h3>My Memes </h3>
+     <div class="image-class" id="imageContainer">
+
+     </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB4oY6iJYQwcaGuzfYgG5_aeFUU6eyW6fE",
+      authDomain: "cse134bhw6-a.firebaseapp.com",
+      databaseURL: "https://cse134bhw6-a.firebaseio.com",
+      projectId: "cse134bhw6-a",
+      storageBucket: "cse134bhw6-a.appspot.com",
+      messagingSenderId: "33008457829"
+    };
+    firebase.initializeApp(config);
+  </script>  
+  <script src="js/home.js"></script>
+    <script>
+      document.getElementById("logout_button").addEventListener("click", function(){
+           firebase_logout();
+      });
+      document.addEventListener("DOMContentLoaded", function() {
+          
+     });
+  </script>
+</body>
+</html>

@@ -1,4 +1,20 @@
 
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    alert("successfully logged in!");
+    var user_token = firebase.auth().currentUser.uid;
+    window.location="home.html";
+
+  } else {
+    // User is signed out.
+    // ...
+  }
+});
+
+
+
 function login(){
 
   var userEmail = document.getElementById("email_field").value;
