@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB4oY6iJYQwcaGuzfYgG5_aeFUU6eyW6fE",
+      authDomain: "cse134bhw6-a.firebaseapp.com",
+      databaseURL: "https://cse134bhw6-a.firebaseio.com",
+      projectId: "cse134bhw6-a",
+      storageBucket: "cse134bhw6-a.appspot.com",
+      messagingSenderId: "33008457829"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+
+  <div class="main-div">
+  	<h1>Meme Me </h1>
+    <img src="assets/images/meme.png" alt="Smiley face">
+    <div id="login_div">
+      <h3>Login Page</h3>
+      <input type="email" placeholder="Email..." id="email_field" />
+      <input type="password" placeholder="Password..." id="password_field" />
+
+      <button onclick="login()">Login to Account</button>
+    </div>
+
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>

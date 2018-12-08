@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Meme Upload</title>
+  <meta name="description" content="Meme Upload">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+   <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB4oY6iJYQwcaGuzfYgG5_aeFUU6eyW6fE",
+      authDomain: "cse134bhw6-a.firebaseapp.com",
+      databaseURL: "https://cse134bhw6-a.firebaseio.com",
+      projectId: "cse134bhw6-a",
+      storageBucket: "cse134bhw6-a.appspot.com",
+      messagingSenderId: "33008457829"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+	<h2>Upload Meme</h2>
+	<label>
+		<input type="file" id="file_upload" oonF>
+	</label>
+	<button onclick="uploadFile()"> Upload</button>
+  <script src="js/upload.js"></script>
+
+  <p id="demo"></p>
+</body>
+</html>
